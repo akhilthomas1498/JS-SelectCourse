@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script P3</title>
+    <script>
+        function deg()
+        {
+            document.getElementById("two").style.display= "";
+            document.getElementById("three").style.display= "none";                                
+        }
+        function deg1()
+        {
+            document.getElementById("three").style.display= "";               
+            document.getElementById("two").style.display= "none";               
+        }
+        function bach()
+        {
+                alert("Bachelors - Bcom");
+        }
+        function bach1()
+        {
+                alert("Bachelors - BCA");
+        }
+        function mast()
+        {
+            alert("Masters - MCA");
+        }
+        function mast1()
+        {
+            alert("Masters - MSc");
+        }
+    </script>
+</head>
+<body>
+    <form style="text-align: center; margin-top:10%">
+        <div class="one">
+            <input type="radio" name ="degree" id="Bachelor" onchange="deg()" value = "Bachelor">
+            <label>Bachelors</label>
+            <input type="radio" name ="degree" id="Masters" onchange="deg1()" value = "Masters">
+            <label>Masters</label>
+        </div><br><br>
+        <div class="two" id="two" style="display:none;">
+            <input type="radio" name ="Bachelor" id="BCom" onchange="bach()" value = "BCom">
+            <label>BCom</label>
+            <input type="radio" name ="Bachelor" id="BCA" onchange="bach1()" value = "BCA">
+            <label>BCA</label>
+        </div>
+        <div class="three" id="three" style="display:none;">
+            <input type="radio" name ="Masters" id="MCA" onchange="mast()" value = "MCA">
+            <label>MCA</label>
+            <input type="radio" name ="Masters" id="MSc" onchange="mast1()" value = "MSc">
+            <label>MSc</label>
+        </div>
+</form>
+</body>
+</html>
